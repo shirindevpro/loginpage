@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+*{
+    font-family: "ropa sans";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+.logo{
+    font-size: 32px;
+    font-weight: 700px;
+   text-decoration: none;
+   color: white;
+   pointer-events: none;
+}
+
+.navbar a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500px;
+    margin-right: 40px;
+}
+.navbar .btn-login{
+    position: relative;
+background: transparent;
+border: none;
+outline: none;
+font-size: 20px;
+color: white;
+font-weight: 500px;
+cursor: pointer;
+}
+.navbar .btn-login::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: white;
+    opacity: .8s;
+}
+.section{
+    min-height: 100vh;
+    background: url('photo.png') no-repeat;
+    background-size: cover;
+   
+}
+.wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    box-shadow: -1px 0 10px rgba(0, 0, 0, -2);
+    border-left: 2px solid rgba(255, 255, 255, .1);
+    width: 450px;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+   padding: 0 40px;
+   flex-direction: column;
+   justify-content: center;
+}
+.wrapper .logreg-box {
+    width: 100%;
+    
+}
+
+.logreg-box .logreg-title{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.logreg-title h2{
+    font-size: 32px;
+}
+.logreg-title p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.logreg-box .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+   
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;font-weight: 500;
+    padding-right: 25px;
+
+    
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+
+.logreg-box .icon{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 19px;
+    color: #fff;
+    transform: translateY(-50%);
+}
+
+.logreg-box .remember-forget{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forget label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-forget a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+.logreg-box .btn{
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, -2);
+    cursor: pointer;
+    font-size: 15px;
+    color: #222;
+    font-weight: 600;
+}
+.logreg-box .logreg-link{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    
+    font-weight: 600;
+    margin: 25px 0 15px;
+
+}
+.logreg-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.logreg-link p a:hover{
+    text-decoration: underline;
+}
+.media-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-options a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, -2);
+    border-radius: 40px;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+.media-options a i {
+    margin: 0 8px 1.5px 0;
+    font-size: 20px;
+}
+
+.media-options a:hover{
+    background: rgba(255, 255, 255, .1);
+}
+   .media-options a span{
+    font-size: 18px;
+    font-weight: 600;
+   } 
